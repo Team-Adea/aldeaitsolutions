@@ -1,0 +1,13 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+
+# Local tooling
+.claude/
+node_modules/
+.netlify/
+
+# Design source is kept for reference; comment the next line out if you
+# want it tracked in git as well.
+design-source/

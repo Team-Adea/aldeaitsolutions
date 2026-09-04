@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Aldea IT Solutions</title>
+  <meta name="description" content="Something we built isn't behaving? Send it here. Support requests go straight to the team, not a queue.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="index.html" aria-label="Aldea IT Solutions — home">
+        <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect x="10.5" y="1" width="11" height="11" fill="#2E4A6B"/>
+          <rect x="1" y="20" width="11" height="11" fill="#2E4A6B"/>
+          <rect x="20" y="20" width="11" height="11" fill="#D98A2B"/>
+        </svg>
+        <span class="brand__text">
+          <span class="brand__name">Aldea</span>
+          <span class="brand__sub">IT Solutions</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span></button>
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <a class="nav__link" href="services.html">Services</a>
+        <a class="nav__link" href="pricing.html">Pricing</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="support.html" aria-current="page">Support</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+        <a class="nav__cta btn btn--dark btn--sm" href="contact.html" onclick="Calendly.initPopupWidget({url:'https://calendly.com/aldeaitsolutions'});return false;">Free consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="wrap page-head__inner">
+        <p class="eyebrow">Support</p>
+        <h1 class="page-title">Something we built isn't behaving?</h1>
+        <p class="page-head__lead">Send it here. Support requests go straight to the team, not a queue. Include the account, the step that failed and roughly when it started.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="wrap support-grid">
+        <div class="form-card">
+          <div class="form-card__head">Raise a request</div>
+          <form name="support" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thanks.html">
+            <input type="hidden" name="form-name" value="support">
+            <p class="form-hp">
+              <label>Leave this empty: <input name="bot-field"></label>
+            </p>
+
+            <label class="field">
+              <span>Email on the account</span>
+              <input type="email" name="email" placeholder="you@company.com" required autocomplete="email">
+            </label>
+
+            <label class="field">
+              <span>What's affected</span>
+              <select name="area">
+                <option>A Google Apps Script automation</option>
+                <option>A Zapier workflow</option>
+                <option>Google Workspace or email</option>
+                <option>Domain or DNS</option>
+                <option>Our website</option>
+                <option>Not sure</option>
+              </select>
+            </label>
+
+            <div class="field">
+              <span>Urgency</span>
+              <div class="seg" role="radiogroup" aria-label="Urgency">
+                <input type="radio" id="u-low" name="urgency" value="Low">
+                <label for="u-low">Low</label>
+                <input type="radio" id="u-normal" name="urgency" value="Normal" checked>
+                <label for="u-normal">Normal</label>
+                <input type="radio" id="u-urgent" name="urgency" value="Urgent">
+                <label for="u-urgent">Urgent</label>
+              </div>
+            </div>
+
+            <label class="field field--last">
+              <span>Describe the issue</span>
+              <textarea name="detail" rows="4" placeholder="What you expected, what happened instead, when it started." required></textarea>
+            </label>
+
+            <div class="form-foot">
+              <button type="submit" class="btn btn--primary">Submit request</button>
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <h2 class="section-title" style="font-size:25px;margin-bottom:28px">Common questions</h2>
+          <div class="faq">
+            <details open>
+              <summary>Is support included after handover?</summary>
+              <p>Defect fixes in our own work are free for 30 days after handover. After that, small changes are billed hourly or covered by a retainer if you have one.</p>
+            </details>
+            <details>
+              <summary>How fast do you reply?</summary>
+              <p>Enquiries and normal support get an answer within one business day. Anything you mark urgent gets looked at the same working day.</p>
+            </details>
+            <details>
+              <summary>Can you take over something another developer built?</summary>
+              <p>Often yes, if the code or configuration is accessible and readable. We start with a short paid review so nobody guesses at the cost.</p>
+            </details>
+            <details>
+              <summary>Do you work with Make or n8n?</summary>
+              <p>Not yet. We have not shipped production work on those platforms, so we do not sell them. We build on Google Apps Script and Zapier, which we know well.</p>
+            </details>
+            <details>
+              <summary>What do you need from us to start?</summary>
+              <p>A short description of the problem, access to the relevant accounts, and one person who can approve decisions.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="site-footer__grid">
+        <div class="foot-brand">
+          <div class="foot-brand__row">
+            <svg class="brand__mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect x="10.5" y="1" width="11" height="11" fill="#2E4A6B"/>
+              <rect x="1" y="20" width="11" height="11" fill="#2E4A6B"/>
+              <rect x="20" y="20" width="11" height="11" fill="#D98A2B"/>
+            </svg>
+            <span class="brand__text">
+              <span class="brand__name">Aldea</span>
+              <span class="brand__sub">IT Solutions</span>
+            </span>
+          </div>
+          <p>Automation, Google Workspace and web work for organisations without an IT department.</p>
+          <a href="mailto:contact@aldeaitsolutions.com">contact@aldeaitsolutions.com</a>
+        </div>
+        <div class="foot-col">
+          <div class="foot-col__head">Services</div>
+          <ul>
+            <li><a href="services.html">Automation</a></li>
+            <li><a href="services.html">Google Workspace</a></li>
+            <li><a href="services.html">Domains and DNS</a></li>
+            <li><a href="services.html">Websites and portfolios</a></li>
+            <li><a href="services.html">Software testing</a></li>
+            <li><a href="services.html">Game testing</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <div class="foot-col__head">Company</div>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="contact.html">Free consultation</a></li>
+          </ul>
+        </div>
+        <div class="foot-col">
+          <div class="foot-col__head">Help</div>
+          <ul>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="support.html">Common questions</a></li>
+            <li><a href="terms.html">Terms of service</a></li>
+            <li><a href="privacy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>&copy; <span data-year>2026</span> Aldea IT Solutions. All rights reserved.</span>
+        <div class="foot-bottom__links">
+          <a href="terms.html">Terms of service</a>
+          <a href="privacy.html">Privacy policy</a>
+          <a href="support.html">Support</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+# Netlify configuration for Aldea IT Solutions
+# The site is plain static files, so there is no build step.
+
+[build]
+  publish = "."
+
+# Pretty URLs: /services instead of /services.html still resolve.
+[[redirects]]
+  from = "/services"
+  to = "/services.html"
+  status = 200
+[[redirects]]
+  from = "/pricing"
+  to = "/pricing.html"
+  status = 200
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+[[redirects]]
+  from = "/support"
+  to = "/support.html"
+  status = 200
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+[[redirects]]
+  from = "/terms"
+  to = "/terms.html"
+  status = 200
+[[redirects]]
+  from = "/privacy"
+  to = "/privacy.html"
+  status = 200
+
+# Basic security headers.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
