@@ -345,6 +345,21 @@ input, textarea, select, button { font-family: inherit; font-size: inherit; colo
 }
 .quote-box .section-title { font-size: 25px; margin-bottom: 26px; }
 
+.pay-panel {
+  margin-top: 22px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 32px 34px;
+}
+.pay-panel__title { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+.pay-panel__note { font-size: 14.5px; color: var(--text-3); line-height: 1.6; margin: 0 0 20px; max-width: 38em; }
+.pay-methods { display: flex; flex-wrap: wrap; gap: 14px; }
+.pay-chip {
+  display: inline-flex; align-items: center; gap: 10px;
+  border: 1px solid var(--border); background: var(--bg-warm);
+  border-radius: var(--radius-sm); padding: 10px 16px;
+  font-size: 14px; font-weight: 600; color: var(--text);
+}
+.pay-chip svg { flex: none; }
+
 /* ---------- About ---------- */
 .about-grid {
   max-width: 44em;
