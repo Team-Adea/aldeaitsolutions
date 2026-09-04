@@ -123,20 +123,30 @@
         <div class="pay-panel" id="payment">
           <div class="pay-panel__title">How you can pay</div>
           <p class="pay-panel__note">Invoices go out at the milestones set in your written scope. Pay however's easiest:</p>
-          <div class="pay-methods">
-            <span class="pay-chip">
-              <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true"><rect x="1" y="1" width="20" height="14" rx="2" stroke="#2E4A6B" stroke-width="1.4"/><rect x="1" y="5" width="20" height="3" fill="#2E4A6B"/></svg>
-              Card (Visa / Mastercard)
-            </span>
-            <span class="pay-chip">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><rect x="1" y="1" width="5" height="5" fill="#D98A2B"/><rect x="10" y="1" width="5" height="5" fill="#D98A2B"/><rect x="1" y="10" width="5" height="5" fill="#D98A2B"/><rect x="10" y="10" width="2" height="2" fill="#D98A2B"/><rect x="13" y="10" width="2" height="2" fill="#D98A2B"/><rect x="10" y="13" width="2" height="2" fill="#D98A2B"/><rect x="13" y="13" width="2" height="2" fill="#D98A2B"/></svg>
-              QR (GCash / Maya)
-            </span>
-            <span class="pay-chip">
-              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" aria-hidden="true"><rect x="1" y="3" width="16" height="12" rx="2" stroke="#2E4A6B" stroke-width="1.4"/><path d="M1 6h16" stroke="#2E4A6B" stroke-width="1.4"/><circle cx="13" cy="10" r="1.3" fill="#2E4A6B"/></svg>
-              PayPal
-            </span>
+          <div class="pay-badges">
+            <svg class="pay-badge" width="44" height="28" viewBox="0 0 44 28" role="img" aria-label="Visa">
+              <rect x="0.5" y="0.5" width="43" height="27" rx="4" fill="#FFFFFF" stroke="#E4DED4"/>
+              <text x="22" y="18.5" text-anchor="middle" font-family="Arial, sans-serif" font-style="italic" font-weight="800" font-size="11.5" fill="#1A1F71" letter-spacing="0.3">VISA</text>
+            </svg>
+            <svg class="pay-badge" width="44" height="28" viewBox="0 0 44 28" role="img" aria-label="Mastercard">
+              <rect x="0.5" y="0.5" width="43" height="27" rx="4" fill="#FFFFFF" stroke="#E4DED4"/>
+              <circle cx="18" cy="14" r="8" fill="#EB001B"/>
+              <circle cx="26" cy="14" r="8" fill="#F79E1B" style="mix-blend-mode:multiply"/>
+            </svg>
+            <svg class="pay-badge" width="44" height="28" viewBox="0 0 44 28" role="img" aria-label="American Express">
+              <rect x="0.5" y="0.5" width="43" height="27" rx="4" fill="#006FCF"/>
+              <text x="22" y="17.5" text-anchor="middle" font-family="Arial, sans-serif" font-weight="800" font-size="8.5" fill="#FFFFFF" letter-spacing="0.4">AMEX</text>
+            </svg>
+            <svg class="pay-badge" width="44" height="28" viewBox="0 0 44 28" role="img" aria-label="QR payment">
+              <rect x="0.5" y="0.5" width="43" height="27" rx="4" fill="#FFFFFF" stroke="#E4DED4"/>
+              <g fill="#16202E">
+                <rect x="10" y="6" width="4" height="4"/><rect x="16" y="6" width="2" height="2"/><rect x="20" y="6" width="4" height="4"/><rect x="26" y="6" width="4" height="4"/>
+                <rect x="10" y="12" width="2" height="2"/><rect x="14" y="10" width="2" height="6"/><rect x="18" y="12" width="4" height="2"/><rect x="24" y="10" width="2" height="4"/><rect x="28" y="12" width="2" height="2"/>
+                <rect x="10" y="18" width="4" height="4"/><rect x="16" y="16" width="2" height="6"/><rect x="20" y="18" width="2" height="2"/><rect x="24" y="16" width="4" height="4"/>
+              </g>
+            </svg>
           </div>
+          <p class="pay-panel__foot">Cards: Visa, Mastercard, American Express &middot; QR: GCash / Maya</p>
         </div>
       </div>
     </section>
